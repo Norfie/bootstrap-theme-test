@@ -22,58 +22,64 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="styles/styles.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-  <header class="header py-1 px-5 border-bottom">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4">
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.svg" class="d-inline-block align-top" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <header class="header border-bottom">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white pl-0">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.svg" class="d-inline-block align-top navbar-brand-img" alt=""></a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="#">Landings <i class="fas fa-chevron-down"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pages <i class="fas fa-chevron-down"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog <i class="fas fa-chevron-down"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shop <i class="fas fa-chevron-down"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Demos <i class="fas fa-chevron-down"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Docs <i class="fas fa-chevron-down"></i></a>
-          </li>
-        </ul>
-        <button class="btn btn-primary my-2 my-sm-0" type="submit">Buy now</button>
-      </div>
-    </nav>
+        <button class="navbar-toggler btn btn-icon rounded-circle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-default">
+            <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor"
+                d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z" />
+            </svg>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Landings <i class="fas fa-chevron-down fa-sm mt-2 ml-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages <i class="fas fa-chevron-down fa-sm mt-2 ml-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog <i class="fas fa-chevron-down fa-sm mt-2 ml-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop <i class="fas fa-chevron-down fa-sm mt-2 ml-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Demos <i class="fas fa-chevron-down fa-sm mt-2 ml-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Docs <i class="fas fa-chevron-down fa-sm mt-2 ml-1"></i></a>
+            </li>
+          </ul>
+          <button class="btn btn-primary ml-3 my-sm-0 py-2" type="submit">Buy now</button>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <section class="title mb-5">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-6 p-5 align-self-center">
-          <div class="w-75 align-self-center">
-            <h1>Turn your ideas into a <span class="border-highlight"><span class="text-primary element"></span></span></h1>
-            <p>Front's feature-rich designed demo pages help you create the best possible product.</p>
-          </div>
+        <div class="col-lg-5 main-text">
+          <h1>Turn your ideas into a <span class="border-highlight"><span class="text-primary element"></span></span></h1>
+          <p>Front's feature-rich designed demo pages help you create the best possible product.</p>
           <button type="button" class="btn btn-lg btn-primary">Get started</button>
-          <button type="button" class="btn btn-lg btn-link text-primary">Learn more <i class="fas fa-angle-right fa-sm ml-1"></i></button>
+          <a type="button" class="btn btn-lg btn-link text-primary" href="#">Learn more <i class="fas fa-angle-right fa-sm ml-1"></i></a>
         </div>
 
-        <figure class="col-lg-6 d-none d-lg-block pr-0">
+        <figure class="col-lg-7 d-none d-lg-block pr-0 position-absolute">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1137.5 979.2">
             <path fill="#F9FBFF" d="M565.5,957.4c81.1-7.4,155.5-49.3,202.4-115.7C840,739.8,857,570,510.7,348.3C-35.5-1.5-4.2,340.3,2.7,389
                 c0.7,4.7,1.2,9.5,1.7,14.2l29.3,321c14,154.2,150.6,267.8,304.9,253.8L565.5,957.4z" />
@@ -93,15 +99,15 @@
   </section>
 
   <section class="learning my-5">
-    <h1 class="text-center">Learn to develop sites with components and design systems</h1>
+    <h2 class="text-center w-50 mx-auto my-5">Learn to develop sites with components and design systems</h2>
     <div class="container">
       <div class="row">
 
         <div class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
-          <div class="card text-white bg-primary p-2">
+          <div class="card bg-primary p-2 rounded h-100">
             <div class="card-body">
-              <h5 class="card-title">Documentation</h5>
-              <p class="card-text">Discover how to build and maintain coding systems using our documentation.</p>
+              <h3 class="card-title text-white">Documentation</h3>
+              <p class="card-text text-white">Discover how to build and maintain coding systems using our documentation.</p>
               <img class="card-img-top" src="images/docs-frame.svg" alt="Card image cap">
             </div>
             <span class="font-size-1 text-white">Learn more <i class="fas fa-angle-right fa-sm ml-1"></i></span>
@@ -109,10 +115,10 @@
         </div>
 
         <div class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
-          <div class="card text-white bg-dark p-2">
+          <div class="card text-white bg-dark p-2 rounded h-100">
             <div class="card-body">
-              <h5 class="card-title">Snippets</h5>
-              <p class="card-text">Start browsing our snippets pages with copy-to-clipboard snippets to match Bootstrap's level of quality.</p>
+              <h3 class="card-title text-white">Snippets</h3>
+              <p class="card-text text-white">Start browsing our snippets pages with copy-to-clipboard snippets to match Bootstrap's level of quality.</p>
               <img class="card-img-top" src="images/snippets-frame.svg" alt="Card image cap">
             </div>
             <span class="font-size-1 text-white">Start building <i class="fas fa-angle-right fa-sm ml-1"></i></span>
@@ -120,10 +126,10 @@
         </div>
 
         <div class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
-          <div class="card text-white bg-warning p-2">
+          <div class="card text-white bg-warning p-2 rounded h-100">
             <div class="card-body">
-              <h5 class="card-title">Layout options</h5>
-              <p class="card-text">Apart from 70+ HTML-pages, the theme comes with 3 ready-to-use and stand-alone demo options.</p>
+              <h3 class="card-title text-white">Layout options</h3>
+              <p class="card-text text-white">Apart from 70+ HTML-pages, the theme comes with 3 ready-to-use and stand-alone demo options.</p>
               <img class="card-img-top" src="images/layouts-frame.svg" alt="Card image cap">
             </div>
             <span class="font-size-1 text-white">View examples <i class="fas fa-angle-right fa-sm ml-1"></i></span>
@@ -134,9 +140,9 @@
     </div>
   </section>
 
-  <section class="testimonials my-5">
-    <div class="container bg-light p-5">
-      <div class="slider">
+  <section class="testimonials">
+    <div class="container bg-light p-5 rounded">
+      <div class="slider mb-0">
 
         <div class="slider-item">
           <div class="row">
@@ -156,22 +162,20 @@
                       C4.4,5.6,4.4,4.9,4.4,4.5c0-1.6,0.8-2.9,2.5-3.7L7.1,1.3z" />
                     </svg>
                   </figure>
-                  <p>I'm absolutely floored by the level of care and attention to detail the team at Htmlstream have put into this theme and for one can guarantee that I will be a return customer.</p>
-                  <footer class="blockquote-footer">
-                    <small class="text-muted">
-                      <span class="text-weight-bold">Lewis</span> — happy customer
-                    </small>
-                  </footer>
+                  <h3>I'm absolutely floored by the level of care and attention to detail the team at Htmlstream have put into this theme and for one can guarantee that I will be a return customer.</h3>
+                  <small class="text-muted">
+                    <strong class="text-dark">Lewis</strong> — happy customer
+                  </small>
                 </blockquote>
               </div>
             </div>
 
             <div class="col-md-3">
-              <div class="card text-center border-0 p-3 bg-light">
+              <div class="card text-center border-0 p-3 bg-light border-left">
                 <div class="card-body">
                   <h2 class="card-title text-primary">3,500+</h2>
                   <p class="card-text">Leaders use Front to build a startup, ecommerce, portfolio and many more websites.</p>
-                  <p class="card-text"><small class="text-muted">Read the case studies <i class="fas fa-angle-right fa-sm ml-1"></i></small></p>
+                  <a href="#"><small>Read the case studies <i class="fas fa-angle-right fa-sm ml-1"></i></small></a>
                 </div>
               </div>
             </div>
@@ -181,7 +185,7 @@
         <div class="slider-item">
           <div class="row">
             <div class="col-md-3">
-              <img src="images/img31.jpg" alt="happy-customer" style="width: 90%; " class="rounded">
+              <img src="images/img32.jpg" alt="happy-customer" style="width: 90%; " class="rounded">
             </div>
 
             <div class="col-md-6">
@@ -195,22 +199,20 @@
                       C4.4,5.6,4.4,4.9,4.4,4.5c0-1.6,0.8-2.9,2.5-3.7L7.1,1.3z" />
                     </svg>
                   </figure>
-                  <p>I'm absolutely floored by the level of care and attention to detail the team at Htmlstream have put into this theme and for one can guarantee that I will be a return customer.</p>
-                  <footer class="blockquote-footer">
-                    <small class="text-muted">
-                      Still <span class="text-weight-bold">Lewis</span> — happy customer
-                    </small>
-                  </footer>
+                  <h3>I'm absolutely floored by the level of care and attention to detail the team at Htmlstream have put into this theme and for one can guarantee that I will be a return customer.</h3>
+                  <small class="text-muted">
+                    <strong class="text-dark">Robin</strong> — happy customer
+                  </small>
                 </blockquote>
               </div>
             </div>
 
             <div class="col-md-3">
-              <div class="card text-center border-0 p-3 bg-light">
+              <div class="card text-center border-0 p-3 bg-light border-left">
                 <div class="card-body">
                   <h2 class="card-title text-primary">3,500+</h2>
                   <p class="card-text">Leaders use Front to build a startup, ecommerce, portfolio and many more websites.</p>
-                  <p class="card-text"><small class="text-muted">Read the case studies <i class="fas fa-angle-right fa-sm ml-1"></i></small></p>
+                  <a href="#"><small>Read the case studies <i class="fas fa-angle-right fa-sm ml-1"></i></small></a>
                 </div>
               </div>
             </div>
@@ -223,8 +225,8 @@
   <section class="jumbotron jumbotron-fluid my-5 bg-white">
     <div class="container">
       <div class="row">
-        <div class="col-md-7">
-          <h1>The powerful and flexible theme for all kinds of businesses</h1>
+        <div class="col-md-8">
+          <h2>The powerful and flexible theme for all kinds of businesses</h2>
           <p>Whether you're creating a subscription service, an on-demand marketplace, an e-commerce store, or a portfolio showcase, Front's unmatched functionality help you create the best possible product for your users.</p>
           <div class="row">
 
@@ -258,8 +260,8 @@
 
           </div>
         </div>
-        <div class="col-md-5">
-          <div class="bg-img-hero h-100 min-h-450rem rounded-lg" style="background-image: url(images/img19.jpg);"></div>
+        <div class="col-md-4">
+          <div class="bg-img-hero h-100 min-h-450rem rounded" style="background-image: url(images/img19.jpg);"></div>
         </div>
       </div>
     </div>
@@ -353,7 +355,7 @@
       <div class="row">
         <div class="col-12 col-md">
           <a href="#" aria-label="Front" class="nav-link">
-            <img class="d-inline-block align-top" src="images/logo-white.svg" alt="Logo">
+            <img class="d-inline-block align-top navbar-brand-img" src="images/logo-white.svg" alt="Logo">
           </a>
           <ul class="nav nav-white flex-column">
             <li class="nav-item"><a href="#" class="nav-link"><span class="fas fa-location-arrow mt-1 mr-2"></span> 153 Williamson Plaza, Maggieberg</a></li>
@@ -361,17 +363,17 @@
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Company</h5>
+          <h5 class="text-white">Company</h5>
           <ul class="nav nav-white flex-column">
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Careers <span class="badge badge-primary ml-1">We're hiring</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Careers <span class="badge badge-primary ml-1 text-white">We're hiring</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Customers</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Hire us</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Features</h5>
+          <h5 class="text-white">Features</h5>
           <ul class="nav nav-white flex-column">
             <li class="nav-item"><a class="nav-link" href="#">Press</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Release notes</a></li>
@@ -380,7 +382,7 @@
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Documentation</h5>
+          <h5 class="text-white">Documentation</h5>
           <ul class="nav nav-white flex-column">
             <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Docs</a></li>
@@ -390,7 +392,7 @@
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Resources</h5>
+          <h5 class="text-white">Resources</h5>
           <ul class="nav nav-white flex-column">
             <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Help</a></li>
             <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-user-circle"></i> Your account</a></li>
@@ -402,7 +404,7 @@
 
       <div class="row">
         <div class="col-md-6">
-          <ul class="list-inline">
+          <ul class="list-inline nav-white">
             <li class="list-inline-item"><a class="nav-link" href="#">Privacy & Policy</a></li>
             <li class="list-inline-item"><span class="nav-link">/</span></li>
             <li class="list-inline-item"><a class="nav-link" href="#">Terms</a></li>
@@ -440,10 +442,13 @@
           </ul>
         </div>
       </div>
-      <p class="text-muted text-center">© Front, 2020 Htmlstream. All rights reserved.</p>
-      <p class="text-muted text-center mb-0">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience
-        and
-        for marketing purposes.</p>
+      <small>
+        <p class="text-muted text-center">© Front, 2020 Htmlstream. All rights reserved.</p>
+        <p class="text-muted text-center mb-0">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience
+          and
+          for marketing purposes.</p>
+      </small>
+
     </div>
   </footer>
 
