@@ -126,11 +126,7 @@ a:focus {
   border-radius: 0.75rem !important;
 }
 
-.testimonials {
-  margin: 15vh auto;
-}
-
-.features {
+.learning, .testimonials, .features {
   margin: 15vh auto;
 }
 
@@ -169,6 +165,7 @@ a:focus {
 /*-------------------------------------------------------POSITIONING-------------------------------------------------------*/
 .position-absolute {
   right: 0;
+  z-index: -1;
 }
 
 /*-------------------------------------------------------EFFECTS-------------------------------------------------------*/
