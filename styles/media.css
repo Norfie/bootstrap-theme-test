@@ -1,0 +1,82 @@
+@media (max-width: 575px) {
+  h5 {
+    font-size: 1rem;
+  }
+
+  .border-light {
+    margin: 20px auto;
+  }
+
+  .header .container {
+    padding: 1vw !important;
+  }
+
+  .container {
+    padding: 5vh 1vw !important;
+  }
+
+  .features, .jumbotron, .testimonials {
+    margin: 5vh auto !important;
+  }
+
+  .footer {
+    padding: 1vw !important;
+  }
+
+  .footer .nav-link {
+    font-size: 0.875rem;
+  }
+
+  .learning {
+    padding: 0 3vw !important;
+  }
+
+  .learning h2 {
+    width: 100% !important;
+    margin: 1vh auto !important;
+  }
+
+  .slick-arrow {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .div-with-separator {
+    border-right: none;
+    transform: skewX(0);
+  }
+
+  .div-without-separator {
+    transform: skewX(0);
+  }
+
+  .row {
+    margin: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .list-inline-item .nav-link {
+    padding: 0;
+  }
+
+  .border-md-top {
+    border-top: .0625rem solid #e7eaf3 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .main-text {
+    padding: 30vh 0;
+    width: 75%;
+  }
+
+  .border-lg-left {
+    border-left: .0625rem solid #e7eaf3 !important;
+  }
+}

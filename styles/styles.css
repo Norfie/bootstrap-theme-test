@@ -8,91 +8,6 @@ body {
   color: #677788;
 }
 
-.navbar-brand,
-.navbar-brand>img {
-  width: 7.5rem;
-}
-
-.header .nav-link {
-  color: #677788;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-.header .nav-link:hover {
-  color: #007bff;
-}
-
-.footer .nav-link {
-  color: #fff;
-  padding-left: 0;
-}
-
-.nav-link:hover {
-  text-decoration: none;
-}
-
-.btn-link {
-  text-decoration: none;
-}
-
-.slider-item:focus, .btn:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.typed-cursor {
-  color: #007bff;
-}
-
-.border-highlight {
-  background: left 1em/1em .2em;
-  background-image: linear-gradient(to bottom, rgba(245, 202, 153, .5) 0, rgba(245, 202, 153, .5) 100%);
-  background-repeat: repeat-x;
-}
-
-.min-h-450rem {
-  min-height: 28.125rem;
-}
-
-.bg-img-hero {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
-.bg-dark {
-  background-color: #131d36 !important;
-}
-
-.bg-warning {
-  background-color: #f0b26b !important;
-}
-
-.bg-light {
-  background-color: #f7faff !important;
-}
-
-.nav-white .nav-link {
-  opacity: 0.7;
-}
-
-.btn-primary:active {
-  background-color: #045cff;
-  border-color: #0056f6;
-}
-
-.btn-primary:hover {
-  background-color: #377dff;
-  border-color: #377dff;
-  box-shadow: 0 4px 11px rgb(55 125 255 / 35%);
-}
-
-.btn-primary:active:focus {
-  box-shadow: none!important;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   color: #1e2022;
@@ -100,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 1.2;
 }
 
@@ -118,28 +33,155 @@ a:hover {
   text-decoration: none;
 }
 
-@media (min-width: 992px) {
-  .main-text {
-    padding: 30vh 0;
-    width: 75%;
-  }
+a:focus {
+  outline: none;
 }
-.btn-link:hover, .btn-link:focus {
-    text-decoration: none;
+
+/*-------------------------------------------------------IMAGES-------------------------------------------------------*/
+.navbar-brand,
+.navbar-brand>img,
+.navbar-brand-img {
+  width: 7.5rem;
+}
+
+.bg-img-hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.avatar {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+/*-------------------------------------------------------LINKS, BUTTONS-------------------------------------------------------*/
+.header .nav-link {
+  color: #677788;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+.footer .nav-link {
+  color: #fff;
+  padding-left: 0;
+}
+
+.nav-link:hover, .btn-link, .btn-link:hover, .btn-link:focus {
+  text-decoration: none;
+}
+
+.slider-item:focus, .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-white .nav-link {
+  opacity: 0.7;
+}
+
+.nav-white .nav-link:hover {
+  opacity: 1;
+}
+
+.btn-primary:active {
+  background-color: #045cff;
+  border-color: #0056f6;
+}
+
+.btn-primary:active:focus {
+  box-shadow: none !important;
+}
+
+/*-------------------------------------------------------CHANGING TEXT-------------------------------------------------------*/
+.typed-cursor {
+  color: #007bff;
+}
+
+.border-highlight {
+  background: left 1em/1em .2em;
+  background-image: linear-gradient(to bottom, rgba(245, 202, 153, .5) 0, rgba(245, 202, 153, .5) 100%);
+  background-repeat: repeat-x;
+}
+
+/*-------------------------------------------------------SIZES, SPACING-------------------------------------------------------*/
+.min-h-450rem {
+  min-height: 28.125rem;
+}
+
+.main-text {
+  padding: 5vh 0;
 }
 
 .title p {
   font-size: 1.25rem;
 }
 
-.position-absolute {
-  right: 0;
-}
-
 .rounded {
   border-radius: 0.75rem !important;
 }
 
+.testimonials {
+  margin: 15vh auto;
+}
+
+.features {
+  margin: 15vh auto;
+}
+
+.landings-popper .row {
+  margin: 0;
+}
+
+.landings-popper-image {
+  padding: 10vh 10vh;
+}
+
+.dropdown-item {
+  padding-left: 0;
+}
+
+/*-------------------------------------------------------BACKGROUND COLORS, IMAGES-------------------------------------------------------*/
+.bg-dark {
+  background-color: #131d36 !important;
+}
+
+.bg-warning {
+  background-color: #f0b26b !important;
+}
+
+.bg-light {
+  background-color: #f7faff !important;
+}
+
+.landings-popper-image {
+  background-image: url("../images/img1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/*-------------------------------------------------------POSITIONING-------------------------------------------------------*/
+.position-absolute {
+  right: 0;
+}
+
+/*-------------------------------------------------------EFFECTS-------------------------------------------------------*/
+/*----------------------BUTTON EFFECTS----------------------*/
+.btn-primary:hover {
+  background-color: #377dff;
+  border-color: #377dff;
+  box-shadow: 0 4px 11px rgb(55 125 255 / 35%);
+  position: relative;
+  bottom: 1px;
+}
+
+/*----------------------CARD EFFECTS----------------------*/
 .card.rounded {
   cursor: pointer;
   opacity: 0.8;
@@ -151,10 +193,23 @@ a:hover {
   bottom: 3px;
 }
 
-.testimonials {
-  margin: 15vh auto;
+/*----------------------DIV EFFECTS----------------------*/
+.div-with-separator {
+  border-right: 1px solid rgba(231, 234, 243, .8);
+  transform: skewX(-20deg);
 }
 
-.border-left {
-  border-left: .0625rem solid #e7eaf3 !important;
+.div-without-separator {
+  transform: skewX(20deg);
+}
+
+.landings-popper {
+  border-top: 5px solid #377dff;
+  z-index: 1000;
+}
+
+/*----------------------HR EFFECTS----------------------*/
+.border-light {
+  opacity: 0.5;
+  margin: 20px -15px;
 }

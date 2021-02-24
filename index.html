@@ -24,6 +24,7 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/media.css">
 </head>
 
 <body>
@@ -45,22 +46,63 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Landings <i class="fas fa-chevron-down fa-sm mt-2 ml-1"></i></a>
+              <a type="button" class="nav-link text-primary landing-button" href="#">Landings <i class="fas fa-chevron-down fa-sm mt-2 mr-3 mr-lg-0 ml-lg-1 float-right"></i></a>
+
+              <div class="landings-popper">
+                <div class="row">
+                  <div class="landings-popper-image col-lg-6 d-none d-lg-block text-white text-center">
+                    <h2 class="text-white">Brandng Works</h2>
+                    <p>Experience a level of our quality in both design & customization works.</p>
+                    <button type="button" class="btn btn-lg btn-primary">Learn more <i class="fas fa-angle-right fa-sm ml-1"></i></button>
+                  </div>
+                  <div class="col-lg-6 m-0 p-0">
+                    <div class="row bg-white p-3">
+                      <div class="col-sm-6 mb-3 mb-sm-0">
+                        <h5>Classic</h5>
+                        <a class="dropdown-item text-primary" href="./index.html">Agency</a>
+                        <a class="dropdown-item " href="#">Analytics <span class="badge badge-primary badge-pill ml-2">Hot</span></a>
+                        <a class="dropdown-item " href="#">Studio</a>
+                        <a class="dropdown-item " href="#">Marketing</a>
+                        <a class="dropdown-item " href="#">Advertisement <span class="badge badge-primary badge-pill ml-2">Hot</span></a>
+                        <a class="dropdown-item " href="#">Consulting</a>
+                        <a class="dropdown-item " href="#">Portfolio</a>
+                        <a class="dropdown-item " href="#">Software</a>
+                        <a class="dropdown-item " href="#">Business</a>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <h5>App</h5>
+                        <div class="mb-3">
+                          <a class="dropdown-item " href="#">UI Kit</a>
+                          <a class="dropdown-item " href="#">SaaS</a>
+                          <a class="dropdown-item " href="#">Workflow</a>
+                          <a class="dropdown-item " href="#">Payment</a>
+                          <a class="dropdown-item " href="#">Tool</a>
+                        </div>
+
+                        <h5>Onepages</h5>
+                        <a class="dropdown-item " href="#">Corporate</a>
+                        <a class="dropdown-item " href="#">SaaS <span class="badge badge-primary badge-pill ml-2">Hot</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pages <i class="fas fa-chevron-down fa-sm mt-2 ml-1"></i></a>
+              <a class="nav-link" href="#">Pages <i class="fas fa-chevron-down fa-sm mt-2 mr-3 mr-lg-0 ml-lg-1 float-right"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog <i class="fas fa-chevron-down fa-sm mt-2 ml-1"></i></a>
+              <a class="nav-link" href="#">Blog <i class="fas fa-chevron-down fa-sm mt-2 mr-3 mr-lg-0 ml-lg-1 float-right"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shop <i class="fas fa-chevron-down fa-sm mt-2 ml-1"></i></a>
+              <a class="nav-link" href="#">Shop <i class="fas fa-chevron-down fa-sm mt-2 mr-3 mr-lg-0 ml-lg-1 float-right"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Demos <i class="fas fa-chevron-down fa-sm mt-2 ml-1"></i></a>
+              <a class="nav-link" href="#">Demos <i class="fas fa-chevron-down fa-sm mt-2 mr-3 mr-lg-0 ml-lg-1 float-right"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Docs <i class="fas fa-chevron-down fa-sm mt-2 ml-1"></i></a>
+              <a class="nav-link" href="#">Docs <i class="fas fa-chevron-down fa-sm mt-2 mr-3 mr-lg-0 ml-lg-1 float-right"></i></a>
             </li>
           </ul>
           <button class="btn btn-primary ml-3 my-sm-0 py-2" type="submit">Buy now</button>
@@ -147,11 +189,11 @@
         <div class="slider-item">
           <div class="row">
 
-            <div class="col-md-3">
-              <img src="images/img31.jpg" alt="happy-customer" style="width: 90%; " class="rounded">
+            <div class="d-none d-lg-block col-lg-3">
+              <a class="fancybox" rel="group" href="images/img31.jpg"><img src="images/img31.jpg" alt="happy-customer" class="rounded img-fluid"></a>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="card p-3 bg-light border-0">
                 <blockquote class="blockquote mb-0 card-body">
                   <figure class="mb-3">
@@ -164,16 +206,19 @@
                   </figure>
                   <h3>I'm absolutely floored by the level of care and attention to detail the team at Htmlstream have put into this theme and for one can guarantee that I will be a return customer.</h3>
                   <small class="text-muted">
+                    <a class="fancybox" rel="group" href="images/img31.jpg">
+                      <img src="images/img31.jpg" alt="happy-customer" class="avatar d-lg-none rounded-circle d-inline mr-1">
+                    </a>
                     <strong class="text-dark">Lewis</strong> — happy customer
                   </small>
                 </blockquote>
               </div>
             </div>
 
-            <div class="col-md-3">
-              <div class="card text-center border-0 p-3 bg-light border-left">
+            <div class="col-lg-3">
+              <div class="card border-0 p-lg-3 bg-light border-md-top border-lg-left">
                 <div class="card-body">
-                  <h2 class="card-title text-primary">3,500+</h2>
+                  <h2 class="card-title text-primary text-lg-center">3,500+</h2>
                   <p class="card-text">Leaders use Front to build a startup, ecommerce, portfolio and many more websites.</p>
                   <a href="#"><small>Read the case studies <i class="fas fa-angle-right fa-sm ml-1"></i></small></a>
                 </div>
@@ -184,11 +229,12 @@
 
         <div class="slider-item">
           <div class="row">
-            <div class="col-md-3">
-              <img src="images/img32.jpg" alt="happy-customer" style="width: 90%; " class="rounded">
+            <div class="d-none d-lg-block col-lg-3">
+              <a class="fancybox" rel="group" href="images/img32.jpg"><img src="images/img32.jpg" alt="happy-customer" class="rounded img-fluid"></a>
+
             </div>
 
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="card p-3 bg-light border-0">
                 <blockquote class="blockquote mb-0 card-body">
                   <figure class="mb-3">
@@ -201,16 +247,19 @@
                   </figure>
                   <h3>I'm absolutely floored by the level of care and attention to detail the team at Htmlstream have put into this theme and for one can guarantee that I will be a return customer.</h3>
                   <small class="text-muted">
+                    <a class="fancybox" rel="group" href="images/img32.jpg">
+                      <img src="images/img32.jpg" alt="happy-customer" class="avatar d-lg-none rounded-circle d-inline mr-1">
+                    </a>
                     <strong class="text-dark">Robin</strong> — happy customer
                   </small>
                 </blockquote>
               </div>
             </div>
 
-            <div class="col-md-3">
-              <div class="card text-center border-0 p-3 bg-light border-left">
+            <div class="col-lg-3">
+              <div class="card border-0 p-lg-3 bg-light border-md-top border-lg-left">
                 <div class="card-body">
-                  <h2 class="card-title text-primary">3,500+</h2>
+                  <h2 class="card-title text-primary text-lg-center">3,500+</h2>
                   <p class="card-text">Leaders use Front to build a startup, ecommerce, portfolio and many more websites.</p>
                   <a href="#"><small>Read the case studies <i class="fas fa-angle-right fa-sm ml-1"></i></small></a>
                 </div>
@@ -224,34 +273,37 @@
 
   <section class="jumbotron jumbotron-fluid my-5 bg-white">
     <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h2>The powerful and flexible theme for all kinds of businesses</h2>
+      <div class="row flex-lg-row-reverse">
+        <div class="col-lg-4">
+          <div class="bg-img-hero h-100 min-h-450rem rounded" style="background-image: url(images/img19.jpg);"></div>
+        </div>
+        <div class="col-lg-8">
+          <h2 class="py-md-3">The powerful and flexible theme for all kinds of businesses</h2>
           <p>Whether you're creating a subscription service, an on-demand marketplace, an e-commerce store, or a portfolio showcase, Front's unmatched functionality help you create the best possible product for your users.</p>
           <div class="row">
 
-            <div class="card  col-md-6 border-0 px-0">
+            <div class="card col-6 border-0 px-0">
               <div class="card-body">
                 <h3 class="card-title text-primary">300+</h3>
                 <p class="card-text">Build a professional website with corporate and SaaS based components.</p>
               </div>
             </div>
 
-            <div class="card col-md-6 border-0">
+            <div class="card col-6 border-0 px-0">
               <div class="card-body">
                 <h3 class="card-title text-primary">70+</h3>
                 <p class="card-text">Take advantage of more than 70 pages designed with mobile-first in mind.</p>
               </div>
             </div>
 
-            <div class="card  col-md-6 border-0 px-0">
+            <div class="card  col-6 border-0 px-0">
               <div class="card-body">
                 <h3 class="card-title text-primary">95%</h3>
                 <p class="card-text">of our customers rated 5-star our themes over 5 years.</p>
               </div>
             </div>
 
-            <div class="card col-md-6 border-0">
+            <div class="card col-6 border-0 px-0">
               <div class="card-body">
                 <h3 class="card-title text-primary">20+</h3>
                 <p class="card-text">We continually deploy improvements to Front, which handles more than 3.5k users.</p>
@@ -260,92 +312,95 @@
 
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="bg-img-hero h-100 min-h-450rem rounded" style="background-image: url(images/img19.jpg);"></div>
-        </div>
       </div>
     </div>
   </section>
 
-  <section class="features my-5">
-    <div class="row text-center px-2 px-lg-3 m-5">
+  <section class="features">
+    <div class="container">
+      <div class="row text-center">
 
-      <div class="col-lg-4">
-        <figure>
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 71.7 64" width="71" height="64">
-            <path fill="#FFC107" d="M36.8,14.6L42,25.3c0,0.2,0.2,0.2,0.3,0.3L54,27.2c0.3,0,0.5,0.5,0.3,0.8l-8.5,8.2c-0.2,0.2-0.2,0.3-0.2,0.5
-      l2,11.7c0,0.3-0.3,0.7-0.7,0.5l-10.5-5.6c-0.2,0-0.3,0-0.5,0l-10.5,5.6c-0.3,0.2-0.8-0.2-0.7-0.5l2-11.7c0-0.2,0-0.3-0.2-0.5
-      L18,28.1c-0.3-0.3-0.2-0.8,0.3-0.8L30,25.6c0.2,0,0.3-0.2,0.3-0.3l5.3-10.7C36.1,14.2,36.6,14.2,36.8,14.6z" />
-            <path opacity=".25" fill="#FFC107" d="M56,5.9l1.5,2.8c0,0,0,0,0.2,0l3.1,0.5c0.2,0,0.2,0.2,0,0.2l-2.3,2.3c0,0,0,0,0,0.2l0.5,3.1
-      c0,0.2-0.2,0.2-0.2,0.2L56,13.6h-0.2L53,15.1c-0.2,0-0.2,0-0.2-0.2l0.5-3.1v-0.2l-2.3-2.3V9.2l3.1-0.5c0,0,0,0,0.2,0l1.5-2.8
-      C55.8,5.7,55.8,5.7,56,5.9z" />
-            <path opacity=".25" fill="#FFC107" d="M12.3,0.3l1.3,2.8c0,0,0,0,0.2,0l3,0.5c0.2,0,0.2,0.2,0,0.2l-2.1,2.1c0,0,0,0,0,0.2l0.5,3
-      c0,0.2-0.2,0.2-0.2,0.2l-2.6-1.5c0,0,0,0-0.2,0L9.5,9.2c-0.2,0-0.2,0-0.2-0.2l0.5-3c0,0,0,0,0-0.2L7.5,3.7V3.6l3-0.5c0,0,0,0,0.2,0
-      l1.3-2.8C12.1,0.3,12.3,0.3,12.3,0.3z" />
-            <path opacity=".25" fill="#FFC107" d="M13.9,49.9l1.5,2.8c0,0,0,0,0.2,0l3.1,0.5c0.2,0,0.2,0.2,0,0.2l-2.3,2.3c0,0,0,0,0,0.2l0.5,3.1
-      c0,0.2-0.2,0.2-0.2,0.2l-2.8-1.5h-0.2L11,59.1c-0.2,0-0.2,0-0.2-0.2l0.5-3.1v-0.2L9,53.4v-0.2l3.1-0.5c0,0,0,0,0.2,0l1.3-2.8
-      C13.8,49.8,13.9,49.8,13.9,49.9z" />
-            <path opacity=".25" fill="#FFC107" d="M60.8,53.5l1.6,3.1c0,0,0,0,0.2,0l3.5,0.5c0.2,0,0.2,0.2,0,0.3l-2.5,2.5c0,0,0,0,0,0.2l0.7,3.5
-      c0,0.2-0.2,0.2-0.2,0.2l-3.1-1.6h-0.2l-3.1,1.6c-0.2,0-0.2,0-0.2-0.2l0.7-3.5v-0.2l-2.5-2.5c-0.2-0.2,0-0.2,0-0.3l3.5-0.5h0.2
-      l1.6-3.1C60.4,53.4,60.6,53.4,60.8,53.5z" />
-          </svg>
-        </figure>
-        <p><span class="font-weight-bold">4,83 out of 5 stars</span> from 53 reviews</p>
-      </div>
+        <div class="col-md-4 div-with-separator">
+          <div class="div-without-separator">
+            <figure>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 71.7 64" width="71" height="64">
+                <path fill="#FFC107" d="M36.8,14.6L42,25.3c0,0.2,0.2,0.2,0.3,0.3L54,27.2c0.3,0,0.5,0.5,0.3,0.8l-8.5,8.2c-0.2,0.2-0.2,0.3-0.2,0.5
+          l2,11.7c0,0.3-0.3,0.7-0.7,0.5l-10.5-5.6c-0.2,0-0.3,0-0.5,0l-10.5,5.6c-0.3,0.2-0.8-0.2-0.7-0.5l2-11.7c0-0.2,0-0.3-0.2-0.5
+          L18,28.1c-0.3-0.3-0.2-0.8,0.3-0.8L30,25.6c0.2,0,0.3-0.2,0.3-0.3l5.3-10.7C36.1,14.2,36.6,14.2,36.8,14.6z" />
+                <path opacity=".25" fill="#FFC107" d="M56,5.9l1.5,2.8c0,0,0,0,0.2,0l3.1,0.5c0.2,0,0.2,0.2,0,0.2l-2.3,2.3c0,0,0,0,0,0.2l0.5,3.1
+          c0,0.2-0.2,0.2-0.2,0.2L56,13.6h-0.2L53,15.1c-0.2,0-0.2,0-0.2-0.2l0.5-3.1v-0.2l-2.3-2.3V9.2l3.1-0.5c0,0,0,0,0.2,0l1.5-2.8
+          C55.8,5.7,55.8,5.7,56,5.9z" />
+                <path opacity=".25" fill="#FFC107" d="M12.3,0.3l1.3,2.8c0,0,0,0,0.2,0l3,0.5c0.2,0,0.2,0.2,0,0.2l-2.1,2.1c0,0,0,0,0,0.2l0.5,3
+          c0,0.2-0.2,0.2-0.2,0.2l-2.6-1.5c0,0,0,0-0.2,0L9.5,9.2c-0.2,0-0.2,0-0.2-0.2l0.5-3c0,0,0,0,0-0.2L7.5,3.7V3.6l3-0.5c0,0,0,0,0.2,0
+          l1.3-2.8C12.1,0.3,12.3,0.3,12.3,0.3z" />
+                <path opacity=".25" fill="#FFC107" d="M13.9,49.9l1.5,2.8c0,0,0,0,0.2,0l3.1,0.5c0.2,0,0.2,0.2,0,0.2l-2.3,2.3c0,0,0,0,0,0.2l0.5,3.1
+          c0,0.2-0.2,0.2-0.2,0.2l-2.8-1.5h-0.2L11,59.1c-0.2,0-0.2,0-0.2-0.2l0.5-3.1v-0.2L9,53.4v-0.2l3.1-0.5c0,0,0,0,0.2,0l1.3-2.8
+          C13.8,49.8,13.9,49.8,13.9,49.9z" />
+                <path opacity=".25" fill="#FFC107" d="M60.8,53.5l1.6,3.1c0,0,0,0,0.2,0l3.5,0.5c0.2,0,0.2,0.2,0,0.3l-2.5,2.5c0,0,0,0,0,0.2l0.7,3.5
+          c0,0.2-0.2,0.2-0.2,0.2l-3.1-1.6h-0.2l-3.1,1.6c-0.2,0-0.2,0-0.2-0.2l0.7-3.5v-0.2l-2.5-2.5c-0.2-0.2,0-0.2,0-0.3l3.5-0.5h0.2
+          l1.6-3.1C60.4,53.4,60.6,53.4,60.8,53.5z" />
+              </svg>
+            </figure>
+            <p><span class="font-weight-bold">4,83 out of 5 stars</span> from 53 reviews</p>
+          </div>
+        </div>
 
-      <div class="col-lg-4">
-        <figure>
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 71.7 64" width="71" height="64">
-            <defs>
-              <circle id="SVGID_1_" cx="50.9" cy="43.1" r="18.9" />
-            </defs>
-            <clipPath id="SVGID_2_">
-              <use xlink:href="#SVGID_1_" />
-            </clipPath>
-            <g transform="matrix(1 0 0 1 0 1.907349e-06)" style="clip-path:url(#SVGID_2_);">
-              <image width="100" height="100" xlink:href="images/img3.jpg" transform="matrix(0.36 0 0 0.36 32.8571 25.1429)"></image>
-            </g>
-            <use xlink:href="#SVGID_1_" fill="none" stroke="#FFFFFF" stroke-width="4" />
-            <defs>
-              <circle id="SVGID_3_" cx="34.6" cy="20.9" r="18.9" />
-            </defs>
-            <clipPath id="SVGID_4_">
-              <use xlink:href="#SVGID_3_" />
-            </clipPath>
-            <g style="clip-path:url(#SVGID_4_);">
-              <image width="100" height="100" xlink:href="images/img4.jpg" transform="matrix(0.36 0 0 0.36 16.5714 2.8571)"></image>
-            </g>
-            <use xlink:href="#SVGID_3_" fill="none" stroke="#FFFFFF" stroke-width="4" />
-            <defs>
-              <circle id="SVGID_5_" cx="20.9" cy="43.1" r="18.9" />
-            </defs>
-            <clipPath id="SVGID_6_">
-              <use xlink:href="#SVGID_5_" />
-            </clipPath>
-            <g style="clip-path:url(#SVGID_6_);">
-              <image width="100" height="100" xlink:href="images/img5.jpg" transform="matrix(0.3771 0 0 0.3771 2 24.2857)"></image>
-            </g>
-            <use xlink:href="#SVGID_5_" fill="none" stroke="#FFFFFF" stroke-width="4" />
-          </svg>
-        </figure>
-        <p>Over <span class="font-weight-bold">500</span> support questions have been closed</p>
-      </div>
+        <div class="col-md-4 div-with-separator">
+          <div class="div-without-separator">
+            <figure>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 71.7 64" width="71" height="64">
+                <defs>
+                  <circle id="SVGID_1_" cx="50.9" cy="43.1" r="18.9" />
+                </defs>
+                <clipPath id="SVGID_2_">
+                  <use xlink:href="#SVGID_1_" />
+                </clipPath>
+                <g transform="matrix(1 0 0 1 0 1.907349e-06)" style="clip-path:url(#SVGID_2_);">
+                  <image width="100" height="100" xlink:href="images/img3.jpg" transform="matrix(0.36 0 0 0.36 32.8571 25.1429)"></image>
+                </g>
+                <use xlink:href="#SVGID_1_" fill="none" stroke="#FFFFFF" stroke-width="4" />
+                <defs>
+                  <circle id="SVGID_3_" cx="34.6" cy="20.9" r="18.9" />
+                </defs>
+                <clipPath id="SVGID_4_">
+                  <use xlink:href="#SVGID_3_" />
+                </clipPath>
+                <g style="clip-path:url(#SVGID_4_);">
+                  <image width="100" height="100" xlink:href="images/img4.jpg" transform="matrix(0.36 0 0 0.36 16.5714 2.8571)"></image>
+                </g>
+                <use xlink:href="#SVGID_3_" fill="none" stroke="#FFFFFF" stroke-width="4" />
+                <defs>
+                  <circle id="SVGID_5_" cx="20.9" cy="43.1" r="18.9" />
+                </defs>
+                <clipPath id="SVGID_6_">
+                  <use xlink:href="#SVGID_5_" />
+                </clipPath>
+                <g style="clip-path:url(#SVGID_6_);">
+                  <image width="100" height="100" xlink:href="images/img5.jpg" transform="matrix(0.3771 0 0 0.3771 2 24.2857)"></image>
+                </g>
+                <use xlink:href="#SVGID_5_" fill="none" stroke="#FFFFFF" stroke-width="4" />
+              </svg>
+            </figure>
+            <p>Over <span class="font-weight-bold">500</span> support questions have been closed</p>
+          </div>
+        </div>
 
-      <div class="col-lg-4">
-        <figure>
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="71" height="64" viewBox="0 0 71.7 64">
-            <path fill="none" stroke="#21325b" stroke-width="2" d="M47.9,1.3H20.1c-2,0-3.5,1.5-3.5,3.5v51.4c0,2,1.5,3.5,3.5,3.5h36.5c2,0,3.5-1.5,3.5-3.5v-8.6V21.2v-7.5
-                    L47.9,1.3z" />
-            <path fill="#21325b" d="M49.1,14.7c-1.1,0-1.8-0.9-1.8-1.8V2L60,14.7H49.1z" />
-            <line fill="none" stroke="#21325b" stroke-width="2" stroke-linecap="round" x1="48.2" y1="21" x2="28" y2="21" />
-            <line fill="none" stroke="#21325b" stroke-width="2" stroke-linecap="round" x1="48.2" y1="27.9" x2="28" y2="27.9" />
-            <line fill="none" stroke="#21325b" stroke-width="2" stroke-linecap="round" x1="48.2" y1="34.8" x2="28" y2="34.8" />
-            <line fill="none" stroke="#21325b" stroke-width="2" stroke-linecap="round" x1="48.2" y1="42" x2="28" y2="42" />
-            <path opacity=".2" fill="#21325b" d="M17.1,56V10.2c0-1.4-1.1-2.5-2.5-2.5h-0.5c-1.4,0-2.5,1.1-2.5,2.5v51.1c0,1.4,1.1,2.5,2.5,2.5h2.9h34.7
-                    c1.4,0,2.5-1.1,2.5-2.5v-0.5c0-1.4-1.1-2.5-2.5-2.5H19.5C18.1,58.4,17.1,57.4,17.1,56z" />
-          </svg>
-        </figure>
-        <p><span class="font-weight-bold">3,700</span> Front copies have been purchased</p>
+        <div class="col-md-4">
+          <figure>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="71" height="64" viewBox="0 0 71.7 64">
+              <path fill="none" stroke="#21325b" stroke-width="2" d="M47.9,1.3H20.1c-2,0-3.5,1.5-3.5,3.5v51.4c0,2,1.5,3.5,3.5,3.5h36.5c2,0,3.5-1.5,3.5-3.5v-8.6V21.2v-7.5
+                      L47.9,1.3z" />
+              <path fill="#21325b" d="M49.1,14.7c-1.1,0-1.8-0.9-1.8-1.8V2L60,14.7H49.1z" />
+              <line fill="none" stroke="#21325b" stroke-width="2" stroke-linecap="round" x1="48.2" y1="21" x2="28" y2="21" />
+              <line fill="none" stroke="#21325b" stroke-width="2" stroke-linecap="round" x1="48.2" y1="27.9" x2="28" y2="27.9" />
+              <line fill="none" stroke="#21325b" stroke-width="2" stroke-linecap="round" x1="48.2" y1="34.8" x2="28" y2="34.8" />
+              <line fill="none" stroke="#21325b" stroke-width="2" stroke-linecap="round" x1="48.2" y1="42" x2="28" y2="42" />
+              <path opacity=".2" fill="#21325b" d="M17.1,56V10.2c0-1.4-1.1-2.5-2.5-2.5h-0.5c-1.4,0-2.5,1.1-2.5,2.5v51.1c0,1.4,1.1,2.5,2.5,2.5h2.9h34.7
+                      c1.4,0,2.5-1.1,2.5-2.5v-0.5c0-1.4-1.1-2.5-2.5-2.5H19.5C18.1,58.4,17.1,57.4,17.1,56z" />
+            </svg>
+          </figure>
+          <p><span class="font-weight-bold">3,700</span> Front copies have been purchased</p>
+        </div>
       </div>
     </div>
   </section>
@@ -353,7 +408,7 @@
   <footer class="footer bg-dark text-white mt-5 p-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md">
+        <div class="col-md-12 col-lg-3">
           <a href="#" aria-label="Front" class="nav-link">
             <img class="d-inline-block align-top navbar-brand-img" src="images/logo-white.svg" alt="Logo">
           </a>
@@ -362,17 +417,17 @@
             <li class="nav-item"><a href="#" class="nav-link"><span class="fas fa-phone-alt mt-1 mr-2"></span> +1 (062) 109-9222</a></li>
           </ul>
         </div>
-        <div class="col-6 col-md">
+        <div class="col-6 col-md-3 col-lg-2">
           <h5 class="text-white">Company</h5>
           <ul class="nav nav-white flex-column">
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Careers <span class="badge badge-primary ml-1 text-white">We're hiring</span></a></li>
+            <li class="nav-item"><a class="nav-link d-inline-block" href="#">Careers </a><span class="badge badge-primary ml-1 text-white d-inline-block">We're hiring</span></li>
             <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Customers</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Hire us</a></li>
           </ul>
         </div>
-        <div class="col-6 col-md">
+        <div class="col-6 col-md-3 col-lg-2">
           <h5 class="text-white">Features</h5>
           <ul class="nav nav-white flex-column">
             <li class="nav-item"><a class="nav-link" href="#">Press</a></li>
@@ -381,7 +436,7 @@
             <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
           </ul>
         </div>
-        <div class="col-6 col-md">
+        <div class="col-6 col-md-3 col-lg-3">
           <h5 class="text-white">Documentation</h5>
           <ul class="nav nav-white flex-column">
             <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
@@ -391,7 +446,7 @@
             <li class="nav-item"><a class="nav-link" href="#">Tech Requirements</a></li>
           </ul>
         </div>
-        <div class="col-6 col-md">
+        <div class="col-6 col-md-3 col-lg-2">
           <h5 class="text-white">Resources</h5>
           <ul class="nav nav-white flex-column">
             <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Help</a></li>
@@ -403,7 +458,7 @@
       <hr class="border-light">
 
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 px-0">
           <ul class="list-inline nav-white">
             <li class="list-inline-item"><a class="nav-link" href="#">Privacy & Policy</a></li>
             <li class="list-inline-item"><span class="nav-link">/</span></li>
@@ -412,7 +467,7 @@
             <li class="list-inline-item"><a class="nav-link" href="#">Site map</a></li>
           </ul>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 text-md-right px-0">
           <ul class="list-inline">
             <li class="list-inline-item"><a href="#" class="btn btn-sm btn-outline-light"><i class="fab fa-facebook-f"></i></a></li>
             <li class="list-inline-item"><a href="#" class="btn btn-sm btn-outline-light"><i class="fab fa-google"></i></a></li>
@@ -443,8 +498,9 @@
         </div>
       </div>
       <small>
-        <p class="text-muted text-center">© Front, 2020 Htmlstream. All rights reserved.</p>
-        <p class="text-muted text-center mb-0">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience
+        <p class="text-muted text-lg-center mt-2">© Front, 2020 Htmlstream. All rights reserved.</p>
+        <p class="text-muted text-lg-center mb-0">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer
+          experience
           and
           for marketing purposes.</p>
       </small>
