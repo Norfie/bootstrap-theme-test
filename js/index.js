@@ -1,3 +1,52 @@
+/*--------------------------------AOS--------------------------------*/
+
+AOS.init({
+  duration: 700,
+  once: true
+});
+
+/*--------------------------------WINDOW ON SCROLL--------------------------------*/
+
+window.onscroll = function() {
+  scrollFunctionFixHeader();
+  scrollFunctionGoUp();
+};
+
+/*--------------------------------FIXING HEADER--------------------------------*/
+
+var header = $(".header");
+
+function scrollFunctionFixHeader() {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    header.addClass("moving-header");
+    header.removeClass("border-bottom");
+    header.addClass("fixedTop");
+  } else {
+    header.removeClass("moving-header");
+    header.addClass("border-bottom");
+    header.removeClass("fixedTop");
+  }
+}
+
+/*--------------------------------GO-UP-BUTTON--------------------------------*/
+
+var goUpButton = $(".go-up-button");
+
+function scrollFunctionGoUp() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    goUpButton.removeClass("d-none");
+  } else {
+    goUpButton.addClass("d-none");
+  }
+}
+
+goUpButton.click(function() {
+  $("html").animate({
+    scrollTop: 0
+  }, 700);
+  return false;
+});
+
 /*--------------------------------SLIDER--------------------------------*/
 
 $('.slider').slick({
@@ -24,11 +73,20 @@ $(document).ready(function() {
   $(".fancybox").fancybox();
 });
 
+/*--------------------------------CHANGING BUTTON (TOGGLER)--------------------------------*/
+
+var togglerButton = $(".navbar-toggler")
+
+togglerButton.click(function() {
+  $(".navbar-toggler-default").toggleClass("d-none");
+  $(".navbar-toggler-toggled").toggleClass("d-none");
+});
+
 /*--------------------------------POPPER--------------------------------*/
 
 var ref = $('.landing-button');
 var popup = $('.landings-popper');
-var title = $('.title');
+var awh = $('section');
 popup.hide();
 
 ref.mouseenter(function() {
@@ -48,7 +106,7 @@ ref.mouseenter(function() {
 });
 
 ref.click(function() {
-  popup.toggle(ref);
+  popup.toggle();
   var popper = new Popper(ref, popup, {
     placement: 'bottom',
     modifiers: {
@@ -63,6 +121,6 @@ ref.click(function() {
   });
 });
 
-title.mouseenter(function() {
+awh.mouseenter(function() {
   popup.hide();
 });
